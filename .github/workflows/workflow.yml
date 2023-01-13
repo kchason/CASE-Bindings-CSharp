@@ -1,0 +1,35 @@
+name: Build and Test
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # Currently this is only one version, but additonal versions can be specified to test against newer versions of .NET
+        dotnet-version: ['6.0.x']
+
+    steps:
+      # Checkout the codebase from the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Setup the appropriate .NET Core SDK version for the build environment
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      
+      # Install NuGet packages as specified in the .csproj file(s)
+      - name: Install Dependencies
+        run: dotnet restore
+      
+      # Build the solution
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      
+      # Run the automated unit tests to ensure all pass prior to packaging
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal

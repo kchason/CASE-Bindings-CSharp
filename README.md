@@ -1,5 +1,7 @@
 # CASE Bindings for C#
 
+![Nuget](https://img.shields.io/nuget/v/CipherTech.CASE.Bindings)
+
 Generated bindings for version 1.0.0 of the [CASE ontology](https://caseontology.org/index.html).
 
 These bindings are write-only: they support creating a CASE-compliant RDF graph from scratch, but not editing or
