@@ -125,12 +125,12 @@
     <value>..\Resources\ClassQuery.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="EnumQuery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\enumquery.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    <value>..\Resources\EnumQuery.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="GlobalPropertiesQuery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\globalpropertiesquery.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    <value>..\Resources\GlobalPropertiesQuery.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="PropertiesQuery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\propertiesquery.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+    <value>..\Resources\PropertiesQuery.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>
