@@ -17,6 +17,10 @@ jobs:
         with:
           dotnet-version: '6.0.x'
       
+      # Install NuGet packages as specified in the .csproj file(s)
+      - name: Install Dependencies
+        run: dotnet restore --packages packages
+
       # Build the solution
       - name: Build
         run: dotnet build --configuration Release --no-restore

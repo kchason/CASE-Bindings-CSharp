@@ -24,7 +24,7 @@ jobs:
       
       # Install NuGet packages as specified in the .csproj file(s)
       - name: Install Dependencies
-        run: dotnet restore
+        run: dotnet restore --packages packages
       
       # Build the solution
       - name: Build
